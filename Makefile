@@ -10,6 +10,7 @@ all:
 clean:
 	make -C UTIL/ clean
 	make -C MODULE/ clean
+	-cd MODULE/tools && ${MAKE} clean;
 	make -C NETIF/ clean
 
 install:
